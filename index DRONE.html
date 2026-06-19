@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
     :root {
       --green:   #4a9c2f;
       --green-d: #357020;
@@ -19,16 +19,16 @@
       --muted:   #9aa882;
       --white:   #ffffff;
     }
- 
+
     html { scroll-behavior: smooth; background: #0e1208; }
- 
+
     body {
       font-family: 'Barlow', sans-serif;
       background: #0e1208;
       color: var(--text);
       line-height: 1.6;
     }
- 
+
     /* ── NAV ── */
     nav {
       position: fixed;
@@ -42,7 +42,7 @@
       backdrop-filter: blur(8px);
       border-bottom: 1px solid rgba(74,156,47,0.2);
     }
- 
+
     .logo {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
@@ -53,13 +53,13 @@
       text-decoration: none;
     }
     .logo span { color: var(--lime); }
- 
+
     .nav-links {
       display: flex;
       gap: 2rem;
       list-style: none;
     }
- 
+
     .nav-links a {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 600;
@@ -71,13 +71,13 @@
       transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--lime); }
- 
+
     .nav-right {
       display: flex;
       align-items: center;
       gap: 0.75rem;
     }
- 
+
     /* Language toggle */
     .lang-toggle {
       display: flex;
@@ -104,7 +104,7 @@
       color: var(--white);
     }
     .lang-btn:hover:not(.active) { color: var(--lime); }
- 
+
     .nav-cta {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
@@ -119,7 +119,7 @@
       transition: background 0.2s;
     }
     .nav-cta:hover { background: var(--green-d); }
- 
+
     /* ── HERO ── */
     #hero {
       min-height: 100vh;
@@ -136,7 +136,7 @@
       background-size: cover;
       background-position: center;
     }
- 
+
     .hero-eyebrow {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 600;
@@ -146,7 +146,7 @@
       color: var(--lime);
       margin-bottom: 1rem;
     }
- 
+
     .hero-headline {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
@@ -158,7 +158,7 @@
       margin-bottom: 1.5rem;
     }
     .hero-headline em { font-style: normal; color: var(--lime); }
- 
+
     .hero-sub {
       font-size: 1.1rem;
       color: var(--muted);
@@ -166,9 +166,9 @@
       margin-bottom: 2.5rem;
       line-height: 1.7;
     }
- 
+
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
- 
+
     .btn-primary {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
@@ -183,7 +183,7 @@
       transition: background 0.2s, transform 0.15s;
     }
     .btn-primary:hover { background: var(--green-d); transform: translateY(-1px); }
- 
+
     .btn-ghost {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 600;
@@ -198,7 +198,7 @@
       transition: border-color 0.2s, color 0.2s;
     }
     .btn-ghost:hover { border-color: var(--lime); color: var(--lime); }
- 
+
     .hero-stats {
       position: absolute;
       bottom: 7rem;
@@ -222,10 +222,10 @@
       text-transform: uppercase;
       color: var(--muted);
     }
- 
+
     /* ── SERVICES ── */
     #services { background: var(--dark-2); padding: 6rem 6%; }
- 
+
     .section-eyebrow {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 600;
@@ -235,7 +235,7 @@
       color: var(--lime);
       margin-bottom: 0.75rem;
     }
- 
+
     .section-heading {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
@@ -246,7 +246,7 @@
       max-width: 560px;
       line-height: 1.05;
     }
- 
+
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -271,10 +271,10 @@
       margin-bottom: 0.75rem;
     }
     .service-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
- 
+
     /* ── HOW IT WORKS ── */
     #how { padding: 6rem 6%; background: #0e1208; }
- 
+
     .process-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -299,7 +299,7 @@
       margin-bottom: 0.6rem;
     }
     .step-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
- 
+
     /* ── WHY US ── */
     #why {
       padding: 5rem 6%;
@@ -312,7 +312,7 @@
       text-align: center;
     }
     #why .section-heading { max-width: 700px; margin: 0 auto 3rem; font-size: clamp(2rem, 4vw, 3.2rem); }
- 
+
     .why-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -333,7 +333,7 @@
       line-height: 1;
     }
     .why-item p { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; text-transform: uppercase; letter-spacing: 0.1em; }
- 
+
     /* ── TESTIMONIALS ── */
     #testimonials { padding: 6rem 6%; background: var(--dark-2); }
     .testimonials-grid {
@@ -353,12 +353,12 @@
       color: var(--lime);
     }
     .testimonial-role { font-size: 0.8rem; color: var(--muted); margin-top: 0.2rem; }
- 
+
     /* ── CTA ── */
     #cta { padding: 7rem 6%; text-align: center; background: #0e1208; }
     #cta .section-heading { max-width: 600px; margin: 0 auto 1rem; }
     #cta p { color: var(--muted); margin-bottom: 2.5rem; font-size: 1.05rem; }
- 
+
     /* ── FOOTER ── */
     footer {
       background: var(--dark-2);
@@ -375,7 +375,7 @@
     footer a { color: var(--muted); text-decoration: none; font-size: 0.8rem; transition: color 0.2s; }
     footer a:hover { color: var(--lime); }
     .footer-links { display: flex; gap: 1.5rem; }
- 
+
     /* ── RESPONSIVE ── */
     @media (max-width: 700px) {
       nav { padding: 0.85rem 5%; }
@@ -387,7 +387,7 @@
   </style>
 </head>
 <body>
- 
+
   <!-- NAV -->
   <nav>
     <a href="#" class="logo">Florida<span>Drone</span>Spray</a>
@@ -405,7 +405,7 @@
       <a href="#cta" class="nav-cta" data-el="nav-cta">Ζητήστε Προσφορά</a>
     </div>
   </nav>
- 
+
   <!-- HERO -->
   <section id="hero">
     <div class="hero-eyebrow" data-el="hero-eyebrow">Ακριβής Αεροψεκασμός Αγροτικών Εκτάσεων · Φλόριντα</div>
@@ -432,7 +432,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- SERVICES -->
   <section id="services">
     <div class="section-eyebrow" data-el="services-eyebrow">Τι Κάνουμε</div>
@@ -470,7 +470,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- HOW IT WORKS -->
   <section id="how">
     <div class="section-eyebrow" data-el="how-eyebrow">Η Διαδικασία</div>
@@ -498,7 +498,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- WHY US -->
   <section id="why">
     <div class="section-eyebrow" data-el="why-eyebrow">Γιατί Drone Spray</div>
@@ -523,7 +523,7 @@
     </div>
     <a href="#cta" class="btn-primary" data-el="why-cta">Ξεκινήστε την Πρώτη σας Εργασία</a>
   </section>
- 
+
   <!-- TESTIMONIALS -->
   <section id="testimonials">
     <div class="section-eyebrow" data-el="test-eyebrow">Αποτελέσματα Πελατών</div>
@@ -546,7 +546,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- CTA -->
   <section id="cta">
     <div class="section-eyebrow" data-el="cta-eyebrow">Ξεκινήστε</div>
@@ -558,7 +558,7 @@
       <a href="mailto:info@flooridadronespray.com" style="color:var(--lime); text-decoration:none;">info@flooridadronespray.com</a>
     </p>
   </section>
- 
+
   <!-- FOOTER -->
   <footer>
     <a href="#" class="logo">Florida<span>Drone</span>Spray</a>
@@ -569,7 +569,7 @@
     </div>
     <p data-el="footer-copy">© 2026 Florida Drone Spray · Πιστοποιημένοι Χειριστές · Όλα τα δικαιώματα διατηρούνται</p>
   </footer>
- 
+
   <script>
     const translations = {
       el: {
@@ -699,12 +699,12 @@
         'footer-copy':      '© 2026 Florida Drone Spray · FAA Part 107 Certified · All rights reserved',
       }
     };
- 
+
     function setLang(lang) {
       document.documentElement.lang = lang;
       document.getElementById('btn-el').classList.toggle('active', lang === 'el');
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
- 
+
       const t = translations[lang];
       document.querySelectorAll('[data-el]').forEach(el => {
         const key = el.getAttribute('data-el');
@@ -712,13 +712,13 @@
           el.innerHTML = t[key];
         }
       });
- 
+
       // Update page title
       document.title = lang === 'el'
         ? 'Florida Drone Spray — Ακριβής Αεροψεκασμός'
         : 'Florida Drone Spray — Precision Agricultural Spraying';
     }
- 
+
     // Default is Greek — already in HTML, no call needed on load
   </script>
 </body>
